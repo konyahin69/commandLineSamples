@@ -75,7 +75,7 @@ public class RomanConverter {
             return "XXX" + fromOneToTenArabicConvertToRoman(result - 30);
         } else if (result < 30 && result > 20) {
             return "XX" + fromOneToTenArabicConvertToRoman(result - 20);
-        } else if (result < 20 && result > 10) {
+        } else if (result < 20 && result >= 10) {
             return "X" + fromOneToTenArabicConvertToRoman(result - 10);
         } else {
             return fromOneToTenArabicConvertToRoman(result);
